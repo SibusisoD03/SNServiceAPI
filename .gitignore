@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SGBServiceAPI/obj
+/SGBServiceAPI/bin
+
+/SGBServiceAPI/SNServiceAPI - Backup.csproj.user
+
+.fake
+.ionide

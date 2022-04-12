@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SNServiceAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SNServiceAPI.Controllers.NominationController.GetScheduledNominationByEmisCode(System.String,System.DateTime)">
+            <summary>
+            Check if school is scheduled for nominations based on the current date
+            </summary>
+            <param name="EmisCode"></param>
+            <param name="currentDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SNServiceAPI.Controllers.NominationController.GetScheduledInfoByEmisCode(System.String)">
+            <summary>
+            Returned schedule based on school. If end date is less than the current date then high to the parent that the nominations are closed
+            </summary>
+            <param name="EmisCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SNServiceAPI.Controllers.NominationController.GetNominationsToBeSecondedByEmisCode(System.String,System.Int32)">
+            <summary>
+            get all the parent who are nominated to be seconded. You cant nominate and second the same parent
+            </summary>
+            <param name="EmisCode">School</param>
+            <param name="ParentId">Logged in parent</param>
+            <returns></returns>
+        </member>
+        <member name="M:SNServiceAPI.Controllers.ParentController.GetParentInfo(System.String)">
+            <summary>
+            Return Parent Info
+            </summary>
+            <param name="IDNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SNServiceAPI.Controllers.ParentController.GetSchoolsByParentId(System.Int32)">
+            <summary>
+            Return All schooled for the parent
+            </summary>
+            <param name="ParentId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SNServiceAPI.Models.UserModel">
+            <Summary>
+             CreateUserModel
+            </Summary>
+        </member>
+        <member name="M:SNServiceAPI.Validators.CreateUserModelValidator.#ctor">
+            <Summary>
+             User validations constructor
+            </Summary>
+        </member>
+    </members>
+</doc>
